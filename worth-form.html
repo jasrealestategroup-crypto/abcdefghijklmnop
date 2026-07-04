@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What's My Home Worth? | Jas Randhawa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Jas <span>Randhawa</span></a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#listings">Search Listings</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section" style="background-color: var(--accent-blue); color: white; padding: 4rem 2rem; border-bottom: var(--border-width) solid var(--border-color); text-align: center;">
+        <div class="container">
+            <h1>What's My Home Worth?</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin-inline: auto;">Fill out the form below for a free, no-obligation evaluation of your home's value in today's market. (Also for the SOLD or I'LL BUY IT program).</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <form id="worth-form" class="brutal-card" action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a35f8c1a-49ba-41a8-8518-b5a3fde9c266">
+            <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            
+            <h2 style="border-bottom: 3px solid #000; padding-bottom: 0.5rem; margin-bottom: 2rem;">Contact Information</h2>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="firstName">First Name - Required</label>
+                    <input type="text" id="firstName" name="firstName" class="brutal-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="lastName">Last Name - Required</label>
+                    <input type="text" id="lastName" name="lastName" class="brutal-input" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="email">Email - Required</label>
+                    <input type="email" id="email" name="email" class="brutal-input" placeholder="e.g. myemail@gmail.com" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number - Required</label>
+                    <input type="tel" id="phone" name="phone" class="brutal-input" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="hearAbout">How did you hear about us?</label>
+                <select id="hearAbout" name="hearAbout" class="brutal-input" style="appearance: auto; padding-right: 1rem;">
+                    <option value="">Choose...</option>
+                    <option value="google">Google</option>
+                    <option value="social">Social Media</option>
+                    <option value="friend">Friend / Family</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <h2 style="border-bottom: 3px solid #000; padding-bottom: 0.5rem; margin-top: 3rem; margin-bottom: 2rem;">Mailing Address</h2>
+            
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="address">Address - Required</label>
+                    <input type="text" id="address" name="address" class="brutal-input" required>
+                </div>
+                <div class="form-group">
+                    <label for="city">City - Required</label>
+                    <input type="text" id="city" name="city" class="brutal-input" required>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="state">State / Province</label>
+                    <input type="text" id="state" name="state" class="brutal-input" value="Ontario">
+                </div>
+                <div class="form-group">
+                    <label for="zip">Zip / Postal Code</label>
+                    <input type="text" id="zip" name="zip" class="brutal-input">
+                </div>
+            </div>
+
+            <h2 style="border-bottom: 3px solid #000; padding-bottom: 0.5rem; margin-top: 3rem; margin-bottom: 2rem;">Property Information</h2>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="bedrooms">Number of Bedrooms</label>
+                    <select id="bedrooms" name="bedrooms" class="brutal-input" style="appearance: auto;">
+                        <option value="">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5+">5+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="bathrooms">Number of Bathrooms</label>
+                    <select id="bathrooms" name="bathrooms" class="brutal-input" style="appearance: auto;">
+                        <option value="">-</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4+">4+</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="sqft">Square Feet</label>
+                    <select id="sqft" name="sqft" class="brutal-input" style="appearance: auto;">
+                        <option value="">-</option>
+                        <option value="<1000">Under 1,000</option>
+                        <option value="1000-1500">1,000 - 1,500</option>
+                        <option value="1500-2000">1,500 - 2,000</option>
+                        <option value="2000-3000">2,000 - 3,000</option>
+                        <option value="3000+">3,000+</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="propertyType">Type of Property</label>
+                    <select id="propertyType" name="propertyType" class="brutal-input" style="appearance: auto;">
+                        <option value="">-</option>
+                        <option value="Single Family">Single Family Home</option>
+                        <option value="Condo">Condominium</option>
+                        <option value="Townhouse">Townhouse</option>
+                        <option value="Multi-Family">Multi-Family</option>
+                        <option value="Land">Land / Lot</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="priceRange">Price Range</label>
+                    <select id="priceRange" name="priceRange" class="brutal-input" style="appearance: auto;">
+                        <option value="">-</option>
+                        <option value="<500k">Under $500,000</option>
+                        <option value="500k-750k">$500,000 - $750,000</option>
+                        <option value="750k-1M">$750,000 - $1,000,000</option>
+                        <option value="1M-1.5M">$1,000,000 - $1,500,000</option>
+                        <option value=">1.5M">Over $1,500,000</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="sellPlan">When do you plan to sell?</label>
+                    <select id="sellPlan" name="sellPlan" class="brutal-input" style="appearance: auto;">
+                        <option value="">-</option>
+                        <option value="ASAP">Immediately</option>
+                        <option value="1-3 months">1 - 3 Months</option>
+                        <option value="3-6 months">3 - 6 Months</option>
+                        <option value="6+ months">6+ Months</option>
+                        <option value="Undecided">Undecided</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Additional Comments</label>
+                <textarea id="comments" name="comments" class="brutal-input" rows="5" placeholder="Please list any additional amenities of your house or special requests."></textarea>
+            </div>
+
+            <button type="submit" class="brutal-button" style="background-color: var(--text-color); color: white;">Submit Form</button>
+
+        </form>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div>
+                <h4>Jas Randhawa</h4>
+                <p>Home Life Miracle Realty Ltd.</p>
+                <p>1339 Matheson Blvd E,<br>Mississauga, ON L4W 1H9</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><a href="tel:647-224-9005">647-224-9005</a></p>
+                <p><a href="mailto:jasrealestategroup@gmail.com">jasrealestategroup@gmail.com</a></p>
+            </div>
+            <div>
+                <h4>Useful Links</h4>
+                <p><a href="index.html#listings">Search Listings</a></p>
+                <p><a href="worth-form.html">Home Evaluation</a></p>
+                <p><a href="worth-form.html">Sold or I'll Buy It</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jas Randhawa Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
