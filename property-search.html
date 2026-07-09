@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property Search | Jas Randhawa</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Jas <span>Randhawa</span></a>
+            <button class="mobile-menu-btn">☰</button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="worth-form.html">What's My Home Worth?</a></li>
+                <li><a href="property-search.html">Property Search</a></li>
+                <li><a href="home-finder.html">Home Finder</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section class="section" style="background-color: var(--accent-blue); color: white; padding: 4rem 2rem; border-bottom: var(--border-width) solid var(--border-color); text-align: center;">
+        <div class="container">
+            <h1>Property Search</h1>
+            <p style="font-size: 1.2rem; max-width: 600px; margin-inline: auto;">Search the latest MLS® listings in the GTA and find the perfect property.</p>
+        </div>
+    </section>
+
+    <section class="form-section">
+        <form class="brutal-card" action="#" method="GET" style="text-align: center; padding: 4rem 2rem;">
+            <h2 style="margin-bottom: 2rem;">Search Active MLS® Listings</h2>
+            
+            <div class="form-group" style="max-width: 500px; margin: 0 auto 2rem;">
+                <input type="text" name="query" class="brutal-input" placeholder="Enter City, Neighborhood, or MLS® Number" required>
+            </div>
+            
+            <div class="form-row" style="max-width: 500px; margin: 0 auto 2rem;">
+                <div class="form-group">
+                    <select name="type" class="brutal-input" style="appearance: auto;">
+                        <option value="">Property Type</option>
+                        <option value="Residential">Residential</option>
+                        <option value="Commercial">Commercial</option>
+                        <option value="Condo">Condominium</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <select name="price" class="brutal-input" style="appearance: auto;">
+                        <option value="">Max Price</option>
+                        <option value="500000">Up to $500k</option>
+                        <option value="1000000">Up to $1M</option>
+                        <option value="2000000">Up to $2M</option>
+                        <option value="9999999">Any Price</option>
+                    </select>
+                </div>
+            </div>
+
+            <button type="button" class="brutal-button" onclick="window.location.href='property-search-form.html';" style="width: 100%; max-width: 500px;">Search Now</button>
+        </form>
+    </section>
+
+    <footer id="contact">
+        <div class="footer-grid">
+            <div>
+                <h4>Jas Randhawa</h4>
+                <p>Home Life Miracle Realty Ltd.</p>
+                <p>1339 Matheson Blvd E,<br>Mississauga, ON L4W 1H9</p>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p><a href="tel:647-224-9005">647-224-9005</a></p>
+                <p><a href="mailto:jasrealestategroup@gmail.com">jasrealestategroup@gmail.com</a></p>
+            </div>
+            <div>
+                <h4>Useful Links</h4>
+                <p><a href="property-search.html">Property Search</a></p>
+                <p><a href="worth-form.html">Home Evaluation</a></p>
+                <p><a href="worth-form.html">Sold or I'll Buy It</a></p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jas Randhawa Real Estate. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
